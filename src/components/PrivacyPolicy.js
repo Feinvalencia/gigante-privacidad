@@ -1,9 +1,26 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/PrivacyPolicy.css';
+import '../components/Contact.css'; // Import Contact CSS for the header styling
 
 const PrivacyPolicy = () => {
   return (
     <div className="privacy-container">
+      <header className="contact-header">
+        <Link to="/" style={{ display: "flex", height: "100%" }}>
+          <img 
+            src="https://ggi.com.mx/wp-content/uploads/2023/11/logo-ggi-white-blackbg.svg" 
+            alt="Logo Gigante Grupo Inmobiliario" 
+            className="contact-logo" 
+          />
+        </Link>
+        <nav className="contact-nav">
+          <ul>
+            <li><Link to="/">Inicio</Link></li>
+            <li><Link to="/contacto">Contacto</Link></li>
+          </ul>
+        </nav>
+      </header>
       <div className="privacy-content">
         <h1>AVISO DE PRIVACIDAD</h1>
         <h2>GIGANTE GRUPO INMOBILIARIO, S.A. DE C.V.</h2>
